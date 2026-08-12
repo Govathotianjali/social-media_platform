@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Stream Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="app-header">✨ Social Stream</h1>
+
+    <div id="authPanel" class="widget-card">
+        <h3>Create Profile To Get Started</h3>
+        <input type="text" id="regUsername" placeholder="Choose unique handle (e.g. alex99)">
+        <input type="text" id="regDisplay" placeholder="Enter display name (e.g. Alex Smith)">
+        <button onclick="handleRegistration()">Create Account</button>
+    </div>
+
+    <div id="feedPanel" class="hidden">
+        <div class="widget-card">
+            <h3 id="welcomeMsg">Welcome</h3>
+            <textarea id="postContent" placeholder="What's happening? Share updates..."></textarea>
+            <button onclick="publishPost()">Publish Post</button>
+        </div>
+
+        <h2 class="feed-title">Global Activity Feed</h2>
+        <div id="timeline"></div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
